@@ -24,7 +24,6 @@ class VoiceTTSInitializer {
     fun initialize(activity: Activity) {
         this.activity = activity
 
-        promoteDialogForAddTTSLanguage()
         VoiceTTSHelper.instance?.initialize(activity.applicationContext)
         VoiceTTSHelper.instance?.setTTSInitializeFailureListener {
             when (it) {
