@@ -13,7 +13,7 @@ An offline handy English-Chinese Dictionary.
 3. Config(Coming soon)
 4. Info: About app, author etc.
 
-![image](http://github.com/hongweibai/TuDict/raw/master/images/Screenshot_1.png =100)
+![image](http://github.com/hongweibai/TuDict/raw/master/images/Screenshot_1.png){:height="40px" width="40px"}
 
 
 ![image](https://raw.githubusercontent.com/hongweibai/TuDict/master/images/Screenshot_2.png)
