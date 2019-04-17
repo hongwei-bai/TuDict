@@ -13,26 +13,26 @@ An offline handy English-Chinese Dictionary.
 3. Config(Coming soon)
 4. Info: About app, author etc.
 
-![img_alt]('http://github.com/hongweibai/TuDict/raw/master/images/Screenshot_1.png')
+![image](http://github.com/hongweibai/TuDict/raw/master/images/Screenshot_1.png)
 
 
-![img_alt]('https://raw.githubusercontent.com/hongweibai/TuDict/master/images/Screenshot_2.png')
+![image](https://raw.githubusercontent.com/hongweibai/TuDict/master/images/Screenshot_2.png)
 
 
-![img_alt]('https://raw.githubusercontent.com/hongweibai/TuDict/master/images/Screenshot_3.png')
+![image]('https://raw.githubusercontent.com/hongweibai/TuDict/master/images/Screenshot_3.png')
 
 
-![img_alt]('https://raw.githubusercontent.com/hongweibai/TuDict/master/images/Screenshot_4.png')
+![image]('https://raw.githubusercontent.com/hongweibai/TuDict/master/images/Screenshot_4.png')
 
 
-![img_alt]('https://raw.githubusercontent.com/hongweibai/TuDict/master/images/Screenshot_5.png')
+![image]('https://raw.githubusercontent.com/hongweibai/TuDict/master/images/Screenshot_5.png')
 
 
-![img_alt]('https://raw.githubusercontent.com/hongweibai/TuDict/master/images/Screenshot_6.png')
+![image]('https://raw.githubusercontent.com/hongweibai/TuDict/master/images/Screenshot_6.png')
 
 
-![img_alt]('https://raw.githubusercontent.com/hongweibai/TuDict/master/images/Screenshot_7.png')
+![image]('https://raw.githubusercontent.com/hongweibai/TuDict/master/images/Screenshot_7.png')
 
 
-![img_alt]('https://raw.githubusercontent.com/hongweibai/TuDict/master/images/Screenshot_8.png')
+![image]('https://raw.githubusercontent.com/hongweibai/TuDict/master/images/Screenshot_8.png')
 
