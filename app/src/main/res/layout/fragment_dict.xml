@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="60dp"
+        tools:context=".view.MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lookup_layout"
+            android:layout_width="320dp"
+            android:layout_height="64dp"
+            android:theme="@style/TuTheme"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:textColorHint="#FFFFFF"
+            android:background="@drawable/ic_input"
+            android:layout_marginTop="32dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/lookuptil"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:singleLine="true"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textColorLink="#FFFFFF"
+                android:hint="@string/dict_lookup_hint"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/lookup_layout">
+        <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/dictResultBottom2">
+                <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerViewWordContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"/>
+            </RelativeLayout>
+
+            <!--Reserved bar area: future use for: add customized explaination for words-->
+            <RelativeLayout
+                    android:id="@+id/dictResultBottom2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_above="@+id/dictResultBottom">
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/dictResultBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true">
+                <Button android:id="@+id/addButton"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:text="@string/dict_button_learn"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:background="@drawable/ic_button"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                android:layout_gravity="center_horizontal">
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewLookup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginEnd="9dp"
+                    android:layout_centerHorizontal="true"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</RelativeLayout>

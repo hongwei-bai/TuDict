@@ -1,0 +1,30 @@
+<resources>
+    <!--Navigation Buttons-->
+    <string name="app_name">兔兔词典</string>
+    <string name="title_dict">词典</string>
+    <string name="title_learn">学习</string>
+    <string name="title_info">信息</string>
+    <string name="title_config">配置</string>
+
+    <!--Launch-->
+    <string name="text_memory_words">纪念不能和我一起来澳洲的兔兔。\n - Mike</string>
+
+    <!--About-->
+    <string name="about_info_name">Mike Hongwei Bai</string>
+    <string name="about_info_email">+</string>
+    <string name="about_info_social_account">bhw8412@hotmail.com</string>
+    <string name="about_info_tel">+</string>
+    <string name="about_info_github">https://hongweibai.github.io/</string>
+
+    <!--TTS-->
+    <string name="tts_install_message">您的Android设备未安装谷歌TTS(文字转语音引擎)。请点击‘前往’跳转至谷歌商店安装该引擎，或点击‘跳过’跳过此步骤。
+    </string>
+    <string name="tts_add_language_message">您的谷歌TTS(文字转语音引擎)中没有安装英语-美国/英国 中的任一项。请点击‘前往’跳转添加语言，或点击‘跳过’跳过此步骤。
+    </string>
+    <string name="tts_install_button_ok">前往</string>
+    <string name="tts_install_button_cancel">跳过</string>
+
+    <!--Home/Dictionary-->
+    <string name="dict_lookup_hint">请输入需要翻译的单词或词组...</string>
+    <string name="dict_button_learn">+ 学习</string>
+</resources>

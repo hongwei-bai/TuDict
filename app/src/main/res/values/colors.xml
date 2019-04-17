@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorTuPrimary">#FFFFFF</color>
+    <color name="colorTuPrimaryDark">#00FF00</color>
+    <color name="colorTuAccent">#FFFFFF</color>
+
+    <color name="colorTuC">#C8AFD1</color>
+    <color name="colorTuE">#7E586B</color>
+    <color name="color_jd_red">#D40F18</color>
+    <color name="colorJDRedBg">#A0FC7B8F</color>
+    <color name="colorTu1">#5416B4</color>
+    <color name="colorTu2">#433B67</color>
+    <color name="colorTextBackground">#74B999</color>
+    <color name="colorPink">#f403f2</color>
+    <color name="colorGray">#EEEEEE</color>
+    <color name="colorDarkGray">#CCCCCC</color>
+    <color name="colorDisableGray">#BBBBBB</color>
+</resources>

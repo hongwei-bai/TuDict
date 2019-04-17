@@ -1,0 +1,33 @@
+<resources>
+    <!--Navigation Buttons-->
+    <string name="app_name">TuDict</string>
+    <string name="title_dict">Dictionary</string>
+    <string name="title_learn">Learn</string>
+    <string name="title_info">Info</string>
+    <string name="title_config">Config</string>
+
+    <!--Launch-->
+    <string name="text_memory_words">In memory of my rabbit \'Tutu\' who could not come to Australia with us.\n - Mike
+    </string>
+
+    <!--About-->
+    <string name="about_info_name">Mike Hongwei Bai</string>
+    <string name="about_info_email">+</string>
+    <string name="about_info_social_account">bhw8412@hotmail.com</string>
+    <string name="about_info_tel">+</string>
+    <string name="about_info_github">https://hongweibai.github.io/</string>
+
+    <!--TTS-->
+    <string name="tts_install_message">Google TTS (Text-To_Speech) is not installed on your phone. Press \'Proceed\' to
+        proceed to Google Play to install Google TTS, or press \'Skip\' to skip.
+    </string>
+    <string name="tts_add_language_message">None of these languages(English-US/UK) are installed in your Google TTS (Text-To_Speech). Press \'Proceed\' to
+        add language, or press \'Skip\' to skip.
+    </string>
+    <string name="tts_install_button_ok">Proceed</string>
+    <string name="tts_install_button_cancel">Skip</string>
+
+    <!--Home/Dictionary-->
+    <string name="dict_lookup_hint">Type word or phrase...</string>
+    <string name="dict_button_learn">+ Learn</string>
+</resources>
