@@ -19,3 +19,11 @@ An offline handy English-Chinese Dictionary.
 
 ![image](https://raw.githubusercontent.com/hongweibai/TuDict/master/images/Screenshot_3.png)
 
+![image](https://raw.githubusercontent.com/hongweibai/TuDict/master/images/Screenshot_4.png)
+
+![image](https://raw.githubusercontent.com/hongweibai/TuDict/master/images/Screenshot_5.png)
+
+![image](https://raw.githubusercontent.com/hongweibai/TuDict/master/images/Screenshot_6.png)
+
+![image](https://raw.githubusercontent.com/hongweibai/TuDict/master/images/Screenshot_7.png)
+
