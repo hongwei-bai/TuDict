@@ -15,3 +15,7 @@ An offline handy English-Chinese Dictionary.
 
 ![image](https://raw.githubusercontent.com/hongweibai/TuDict/master/images/Screenshot_1.png)
 
+![image](https://raw.githubusercontent.com/hongweibai/TuDict/master/images/Screenshot_2.png)
+
+![image](https://raw.githubusercontent.com/hongweibai/TuDict/master/images/Screenshot_3.png)
+
