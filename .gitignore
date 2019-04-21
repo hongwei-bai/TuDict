@@ -9,3 +9,9 @@
 /build
 /captures
 .externalNativeBuild
+
+// mike added
+/.idea/misc.xml
+/.idea/
+/app/release/
+*.jks
