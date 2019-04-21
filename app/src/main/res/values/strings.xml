@@ -7,7 +7,8 @@
     <string name="title_config">Config</string>
 
     <!--Launch-->
-    <string name="text_memory_words">In memory of my rabbit \'Tutu\' who could not come to Australia with us.\n - Mike
+    <!--<string name="text_memory_words">In memory of my rabbit \'Tutu\' who could not come to Australia with us.\n - Mike-->
+    <string name="text_memory_words">In memory of my rabbit \'Tutu\'.\n - Mike
     </string>
 
     <!--About-->

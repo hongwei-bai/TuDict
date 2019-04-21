@@ -7,7 +7,8 @@
     <string name="title_config">配置</string>
 
     <!--Launch-->
-    <string name="text_memory_words">纪念不能和我一起来澳洲的兔兔。\n - Mike</string>
+    <!--<string name="text_memory_words">纪念不能和我一起来澳洲的兔兔。\n - Mike</string>-->
+    <string name="text_memory_words">纪念我的兔兔。\n - Mike</string>
 
     <!--About-->
     <string name="about_info_name">Mike Hongwei Bai</string>
