@@ -1,4 +1,4 @@
-package com.mike.tudict.model
+package com.mike.tudict
 
 import java.io.File
 
@@ -42,7 +42,7 @@ object Constants {
 
     object DB {
         val DICT_DIR = "dict"
-        val DICT_PATH = PHONE_DIR.USER_FOLDER + File.separator + DICT_DIR
+        val DICT_PATH = Constants.PHONE_DIR.USER_FOLDER + File.separator + DICT_DIR
         val DICT_TXT_EXTENSION = "txt"
         val DICT_TXT_ENCODE = "GBK"
 

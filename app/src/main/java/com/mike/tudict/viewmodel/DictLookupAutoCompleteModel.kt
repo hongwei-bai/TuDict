@@ -1,6 +1,6 @@
 package com.mike.tudict.viewmodel
 
-import com.mike.tudict.model.Constants
+import com.mike.tudict.Constants
 import com.mike.tudict.model.ada.DbAdaInterface
 import com.mike.tudict.model.ada.DbAdaTable
 import com.mike.tudict.model.impl.SQLiteImpl

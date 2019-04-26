@@ -5,7 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.mike.tudict.R
-import com.mike.tudict.model.Constants
+import com.mike.tudict.Constants
 import com.mike.tudict.model.DisplayItem
 import kotlinx.android.synthetic.main.dictionary_item_explanation.view.*
 import kotlinx.android.synthetic.main.dictionary_item_phontic.view.*

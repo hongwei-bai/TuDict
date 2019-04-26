@@ -1,4 +1,4 @@
-package com.mike.tudict
+package com.mike.tudict.model.dbmodel
 
 import android.content.Context
 import android.util.Log

@@ -1,5 +1,6 @@
 package com.mike.tudict.model
 
+import com.mike.tudict.Constants
 import com.mike.tudict.model.ada.DbAdaInterface
 import com.mike.tudict.model.ada.DbAdaTable
 import com.mike.tudict.model.dictionary.txtparser.Hierarchy

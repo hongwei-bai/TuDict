@@ -1,7 +1,7 @@
 package com.mike.tudict.model.dictionary.txtparser
 
 import android.util.Log
-import com.mike.tudict.model.Constants
+import com.mike.tudict.Constants
 import com.mike.tudict.model.DictConstants
 import com.mike.tudict.model.DictConstants.Companion.NOTE_ON_USAGE
 import com.mike.tudict.model.DictConstants.Companion.abbrevation

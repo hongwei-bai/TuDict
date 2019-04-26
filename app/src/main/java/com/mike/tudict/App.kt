@@ -2,7 +2,9 @@ package com.mike.tudict
 
 import com.mike.tudict.component.CrashHandler
 import com.mike.tudict.di.component.DaggerAppComponent
+import com.mike.tudict.model.dbmodel.DbInitialization
 import com.squareup.leakcanary.LeakCanary
+import com.tencent.bugly.crashreport.CrashReport
 import dagger.android.AndroidInjector
 import dagger.android.DaggerApplication
 
@@ -23,6 +25,8 @@ class App : DaggerApplication() {
         LeakCanary.install(this)
 
         CrashHandler().init(this)
+
+        CrashReport.initCrashReport(this, Constants.BUGLY.APP_ID, true)
 
         if (!DbInitialization.check(this)) {
             DbInitialization.initization(this)

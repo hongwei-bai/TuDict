@@ -1,7 +1,7 @@
 package com.mike.tudict.model.dictionary.txtparser
 
 import android.util.Log
-import com.mike.tudict.model.Constants
+import com.mike.tudict.Constants
 
 import java.io.BufferedReader
 import java.io.File
