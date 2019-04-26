@@ -83,4 +83,9 @@ object Constants {
     const val VIEW_TYPE_PHONTIC = 1
     const val VIEW_TYPE_EXPLAIN = 2
     val VIEW_TYPE_COUNT = VIEW_TYPE_EXPLAIN + 1
+
+    object BUGLY {
+        val APP_ID = "c51611bceb"
+        val APP_KEY = "621905f5-ec2a-41a5-9f08-b54c0e216e3a"
+    }
 }
