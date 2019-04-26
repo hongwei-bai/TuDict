@@ -6,9 +6,7 @@ import android.text.TextWatcher
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.mike.tudict.R
 import com.mike.tudict.model.DisplayItem
@@ -16,7 +14,9 @@ import com.mike.tudict.view.widget.DictContentAdapter
 import com.mike.tudict.view.widget.DictLookupAutoCompleteAdapter
 import com.mike.tudict.viewmodel.DictionaryViewModel
 import com.mike.tudict.viewmodel.VoiceTTSHelper
+import dagger.android.support.DaggerFragment
 import kotlinx.android.synthetic.main.fragment_dict.*
+import javax.inject.Inject
 
 /**
  * Author: Mike
@@ -24,12 +24,15 @@ import kotlinx.android.synthetic.main.fragment_dict.*
  * Date: 2019/4/14
  * Description:
  */
-class DictFragment : Fragment() {
-    private lateinit var viewModel: DictionaryViewModel
+class DictFragment : DaggerFragment() {
+    @Inject
+    protected lateinit var viewModel: DictionaryViewModel
 
-    private lateinit var dictLookupAutoCompleteAdapter: DictLookupAutoCompleteAdapter
+    @Inject
+    protected lateinit var dictLookupAutoCompleteAdapter: DictLookupAutoCompleteAdapter
 
-    private lateinit var dictContentAdapter: DictContentAdapter
+    @Inject
+    protected lateinit var dictContentAdapter: DictContentAdapter
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_dict, container, false)
@@ -40,7 +43,6 @@ class DictFragment : Fragment() {
 
         // Lookup dropdown list
         val layoutManager = LinearLayoutManager(activity)
-        dictLookupAutoCompleteAdapter = DictLookupAutoCompleteAdapter()
 
         // [ENTRY]One of suggested words in list is clicked ->
         dictLookupAutoCompleteAdapter.setOnItemWordClickListener {
@@ -53,7 +55,6 @@ class DictFragment : Fragment() {
 
         // Dictionary word content(explanation) block
         val layoutManager2 = LinearLayoutManager(activity)
-        dictContentAdapter = DictContentAdapter()
         recyclerViewWordContent.layoutManager = layoutManager2
         recyclerViewWordContent.adapter = dictContentAdapter
 
@@ -85,8 +86,9 @@ class DictFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProviders.of(this).get(DictionaryViewModel::class.java)
-        viewModel.initializeDictDbConnection(activity!!.applicationContext)
+        activity?.let {
+            viewModel.initializeDictDbConnection(it.applicationContext)
+        }
         viewModel.lookupResult.observe(this, Observer<MutableList<String>> { newList ->
             dictLookupAutoCompleteAdapter.setData(newList)
         })

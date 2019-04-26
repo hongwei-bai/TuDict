@@ -1,8 +1,10 @@
 package com.mike.tudict
 
-import android.app.Application
 import com.mike.tudict.component.CrashHandler
+import com.mike.tudict.di.component.DaggerAppComponent
 import com.squareup.leakcanary.LeakCanary
+import dagger.android.AndroidInjector
+import dagger.android.DaggerApplication
 
 /**
  * Author: Mike
@@ -10,7 +12,11 @@ import com.squareup.leakcanary.LeakCanary
  * Date: 2019/4/14
  * Description:
  */
-class App : Application() {
+class App : DaggerApplication() {
+    override fun applicationInjector(): AndroidInjector<out DaggerApplication> {
+        return DaggerAppComponent.builder().create(this)
+    }
+
     override fun onCreate() {
         super.onCreate()
 

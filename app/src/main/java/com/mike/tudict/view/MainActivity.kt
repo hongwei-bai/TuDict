@@ -3,11 +3,11 @@ package com.mike.tudict.view
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
-import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.mike.tudict.R
 import com.mike.tudict.view.animation.CircularReveal
 import com.mike.tudict.viewmodel.VoiceTTSInitializer
+import dagger.android.support.DaggerAppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.view_memory.*
 
@@ -17,7 +17,7 @@ import kotlinx.android.synthetic.main.view_memory.*
  * Date: 2019/4/14
  * Description:
  */
-class MainActivity : AppCompatActivity() {
+class MainActivity : DaggerAppCompatActivity() {
 
     private var startupFragment = LaunchFragment()
     var dictFragment = DictFragment()
