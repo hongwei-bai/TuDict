@@ -3,6 +3,7 @@ package com.mike.tudict
 import com.mike.tudict.component.CrashHandler
 import com.mike.tudict.di.component.DaggerAppComponent
 import com.mike.tudict.model.dbmodel.DbInitialization
+import com.mike.tudict.model.dbmodel.DbUpgradeNetInterface
 import com.squareup.leakcanary.LeakCanary
 import com.tencent.bugly.crashreport.CrashReport
 import dagger.android.AndroidInjector
@@ -27,6 +28,8 @@ class App : DaggerApplication() {
         CrashHandler().init(this)
 
         CrashReport.initCrashReport(this, Constants.BUGLY.APP_ID, true)
+
+        DbUpgradeNetInterface.getDictUpgradeInfo()
 
         if (!DbInitialization.check(this)) {
             DbInitialization.initization(this)

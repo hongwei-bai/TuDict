@@ -88,4 +88,10 @@ object Constants {
         val APP_ID = "c51611bceb"
         val APP_KEY = "621905f5-ec2a-41a5-9f08-b54c0e216e3a"
     }
+
+    object NETWORK {
+        const val HTTP_DEBUG = true
+        const val HTTP_DEBUG_TAG = "okhttp"
+        const val CONNECTION_TIMEOUT = 5000
+    }
 }
